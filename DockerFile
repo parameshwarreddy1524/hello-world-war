@@ -16,7 +16,7 @@ RUN curl -O https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.96/bin/apache-tomcat-9
 RUN tar xvfz apache*.tar.gz
 RUN mv apache-tomcat-9.0.96/* /opt/tomcat/.
 
-COPY hello-world-war-1.0.0.war /opt/tomcat/webapps/
+COPY target/hello-world-war-1.0.0.war /opt/tomcat/webapps/
 
 EXPOSE 8080
 
